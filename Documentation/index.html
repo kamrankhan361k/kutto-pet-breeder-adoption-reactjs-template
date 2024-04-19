@@ -1,0 +1,559 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>kutto Template Documentation</title>
+  <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png" />
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+		p{margin:0; padding:0;}
+		hr{ height:1px; margin:40px 0 40px 0;}
+		pre {
+		  display:block;
+		  font:normal 12px/22px Monaco,Monospace !important;
+		  color:#333;
+		  background-color:#f2f2f2;
+		  background-image:-webkit-repeating-linear-gradient(top, #e5e5e5 0px, #e5e5e5 22px, #f2f2f2 22px, #f2f2f2 44px);
+		  background-image:-moz-repeating-linear-gradient(top, #e5e5e5 0px, #e5e5e5 22px, #f2f2f2 22px, #f2f2f2 44px);
+		  background-image:-ms-repeating-linear-gradient(top, #e5e5e5 0px, #e5e5e5 22px, #f2f2f2 22px, #f2f2f2 44px);
+		  background-image:-o-repeating-linear-gradient(top, #e5e5e5 0px, #e5e5e5 22px, #f2f2f2 22px, #f2f2f2 44px);
+		  background-image:repeating-linear-gradient(top, #e5e5e5 0px, #e5e5e5 22px, #f2f2f2 22px, #f2f2f2 44px);
+		  padding:0em 1em;
+		  overflow:auto;
+		  border:solid 1px #ccc;
+		}
+		.alpha li{
+			margin-bottom: 5px;
+		}
+		
+		pre strong{color:#3A66FF;}
+    </style>
+</head>
+
+
+<body>
+<div class="container">
+	
+		<h3 class="center alt">Documentation by &ldquo;ThemeBeyond&quot;</h3>
+		
+		<hr>
+		
+  <h1 class="center filename">&ldquo;kutto - React Interactive Pet Breeder & Adoption Template&rdquo;</h1>
+		<p>kutto  is React Interactive Pet Breeder & Adoption Template, is a bootstrap page built with React js. It implements bootstrap 4 package with interactive design. Each page section  custom with reactdom + styled-components , you will get smooth page transition on everypages, css files and js file well organized in directory, it's easy to customize with single css file for custom all element style, styled-components also include for style on each component instead.</p>
+		<p>&nbsp;</p>
+		<p><strong> IMPORTANT</strong>:It's built with React  not HTML page. </p>
+		<br>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 02 Feb, 2022<br>
+					By: ThemeBeyond<br>
+					Email / skype: <a href="https://themeforest.net/user/themebeyond">ThemeBeyond</a><br><br>
+					</strong>
+			  </p>
+</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my template. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="https://themeforest.net/user/themebeyond">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+  <h2 id="toc" class="alt">Getting Started</h2>
+		<ol class="alpha">
+		  <li><strong>Node.js and NPM :</strong> You can download Node.js from <a href="https://nodejs.org" target="_blank">https://nodejs.org.</a> NPM comes bundled with Node.js.</li>
+		  <li><strong>NPM :</strong> You must have to npm install packages. You can do this by running <strong>npm install</strong> from the root of your project to install all the necessary dependencies.</li>
+		  <li><strong>Run <i>npm start</i></strong> for a dev server. Navigate to http://localhost:3000/ . The app will automatically reload if you change any of the source files.</li>
+		  <li><strong>Run <i>npm run build</i></strong> to build the project. The build artifacts will be stored in the build/ directory. Use the npm run build --prod flag for a production build.</li>
+		  <br>
+		  <li><a href="#A">Folder Structure</a></li>
+		  <li><a href="#B">HTML Structure</a></li>
+		  <li><a href="#C">CSS Files</a></li>
+      <li><a href="#D">Dependencies</a></li>
+  </ol>
+		
+<hr>
+<h3 id="A">E Folder Structure - <a href="#toc">top</a>  </h3>
+  <h3>Structure Template</h3>
+<pre>
+kutto
+// root folder
++
+template
+├───public
+│       ├───css			-- all css files
+│       ├───fonts			-- all fonts	 files
+│       ├───img			-- all img files
+│       ├───js			-- all js files
+└───src
+│  ├───App.js              	-- set your page here
+│  │   ├───componets			-- all component page js
+│  │   ├───pages			    -- all page js
+    
+
+   
++
+</pre>
+<hr/>	
+  <h3 id="B">E HTML structure - <a href="#toc">top</a>  </h3>
+  <h3>Nav Structure How to change Path link and logo, see the blue color below</h3>
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+ 
+  <pre style="margin: 0; line-height: 125%">
+    import React, {useEffect} from 'react';
+    import {Link} from 'react-router-dom'
+    import $ from 'jquery';
+    function Header(){
+      useEffect(()=&gt;{
+    
+        //SubMenu Dropdown Toggle
+    if ($('.menu-area li.menu-item-has-children ul').length) {
+      $('.menu-area .navigation li.menu-item-has-children').append('&lt;div class=&quot;dropdown-btn&quot;&gt;&lt;span class=&quot;fas fa-angle-down&quot;&gt;&lt;/span&gt;&lt;/div&gt;');
+    
+    }
+        if ($('.mobile-menu').length) {
+    
+      var mobileMenuContent = $('.menu-area .main-menu').html();
+      $('.mobile-menu .menu-box .menu-outer').append(mobileMenuContent);
+    
+      //Dropdown Button
+      $('.mobile-menu li.menu-item-has-children .dropdown-btn').on('click', function () {
+        $(this).toggleClass('open');
+        $(this).prev('ul').slideToggle(500);
+      });
+      //Menu Toggle Btn
+      $('.mobile-nav-toggler').on('click', function () {
+        $('body').addClass('mobile-menu-visible');
+      });
+    
+      //Menu Toggle Btn
+      $('.menu-backdrop, .mobile-menu .close-btn').on('click', function () {
+        $('body').removeClass('mobile-menu-visible');
+      });
+    }
+    
+       $(&quot;.navbar-toggle&quot;).on('click', function () {
+            $(&quot;.navbar-nav&quot;).addClass(&quot;mobile_menu&quot;);
+          });
+          $(&quot;.navbar-nav li a&quot;).on('click', function () {
+            $(&quot;.navbar-collapse&quot;).removeClass(&quot;show&quot;);
+          });
+    
+            $(&quot;.header-search &gt; a&quot;).on('click', function () {
+            $(&quot;.search-popup-wrap&quot;).slideToggle();
+              return false;
+            });
+    
+            $(&quot;.search-close&quot;).on('click',function () {
+            $(&quot;.search-popup-wrap&quot;).slideUp(500);
+            });
+      },[])
+        return(
+    &lt;header&gt;
+            &lt;div className=&quot;header-top-area&quot;&gt;
+              &lt;div className=&quot;container custom-container&quot;&gt;
+                &lt;div className=&quot;row align-items-center&quot;&gt;
+                  &lt;div className=&quot;col-md-7&quot;&gt;
+                    &lt;div className=&quot;header-top-left&quot;&gt;
+                      &lt;ul&gt;
+                        &lt;li&gt;Call us: 747-800-9880&lt;/li&gt;
+                        &lt;li&gt;&lt;i className=&quot;far fa-clock&quot; /&gt;Opening Hours: 7:00 am - 9:00 pm (Mon - Sun)&lt;/li&gt;
+                      &lt;/ul&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div className=&quot;col-md-5&quot;&gt;
+                    &lt;div className=&quot;header-top-right&quot;&gt;
+                      &lt;ul className=&quot;header-top-social&quot;&gt;
+                        &lt;li className=&quot;follow&quot;&gt;Follow :&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;/#&quot;&gt;&lt;i className=&quot;fab fa-facebook-f&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;/#&quot;&gt;&lt;i className=&quot;fab fa-twitter&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;/#&quot;&gt;&lt;i className=&quot;fab fa-instagram&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;/#&quot;&gt;&lt;i className=&quot;fab fa-linkedin-in&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+                      &lt;/ul&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div id=&quot;sticky-header&quot; className=&quot;menu-area&quot;&gt;
+              &lt;div className=&quot;container custom-container&quot;&gt;
+                &lt;div className=&quot;row&quot;&gt;
+                  &lt;div className=&quot;col-12&quot;&gt;
+                    &lt;div className=&quot;mobile-nav-toggler&quot;&gt;&lt;i className=&quot;fas fa-bars&quot; /&gt;&lt;/div&gt;
+                    &lt;div className=&quot;menu-wrap&quot;&gt;
+                      &lt;nav className=&quot;menu-nav show&quot;&gt;
+                        &lt;<strong>div className=&quot;logo&quot;&gt;&lt;Link to=&quot;/&quot;&gt;&lt;img src=&quot;img/logo/logo.png&quot; alt=&quot;&quot; /&gt;&lt;/Link&gt;&lt;/div&gt;</strong>
+                        &lt;div className=&quot;navbar-wrap main-menu d-none d-lg-flex&quot;&gt;
+                          &lt;ul className=&quot;navigation&quot;&gt;
+                            &lt;li className=&quot;active menu-item-has-children&quot;&gt;&lt;Link to=&quot;/&quot;&gt;Home&lt;/Link&gt;
+                              &lt;ul className=&quot;submenu&quot;&gt;
+                                &lt;li className=&quot;active&quot;&gt;&lt;Link to=&quot;/&quot;&gt;Home One&lt;/Link&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;Link to=&quot;/home-two&quot;&gt;Home Two&lt;/Link&gt;&lt;/li&gt;
+                              &lt;/ul&gt;
+                            &lt;/li&gt;
+                            &lt;li&gt;&lt;Link to=&quot;/doglist&quot;&gt;Dog List&lt;/Link&gt;&lt;/li&gt;
+                            &lt;li className=&quot;menu-item-has-children&quot;&gt;&lt;Link to=&quot;/shop&quot;&gt;Shop&lt;/Link&gt;
+                              &lt;ul className=&quot;submenu&quot;&gt;
+                                &lt;li&gt;&lt;Link to=&quot;/shop&quot;&gt;Our Shop&lt;/Link&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;Link to=&quot;/shop-details&quot;&gt;Shop Details&lt;/Link&gt;&lt;/li&gt;
+                              &lt;/ul&gt;
+                            &lt;/li&gt;
+                            &lt;li&gt;&lt;Link to=&quot;/adoption&quot;&gt;Adoption&lt;/Link&gt;&lt;/li&gt;
+                            &lt;li className=&quot;menu-item-has-children&quot;&gt;&lt;Link to=&quot;/breeder&quot;&gt;Breeder&lt;/Link&gt;
+                              &lt;ul className=&quot;submenu&quot;&gt;
+                                &lt;li&gt;&lt;Link to=&quot;/breeder&quot;&gt;Our Breeder&lt;/Link&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;Link to=&quot;/breeder-details&quot;&gt;Breeder Details&lt;/Link&gt;&lt;/li&gt;
+                              &lt;/ul&gt;
+                            &lt;/li&gt;
+                            &lt;li className=&quot;menu-item-has-children&quot;&gt;&lt;Link to=&quot;blogs&quot;&gt;Blog&lt;/Link&gt;
+                              &lt;ul className=&quot;submenu&quot;&gt;
+                                &lt;li&gt;&lt;Link to=&quot;/blogs&quot;&gt;Our Blog&lt;/Link&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;Link to=&quot;/blog-details&quot;&gt;Blog Details&lt;/Link&gt;&lt;/li&gt;
+                              &lt;/ul&gt;
+                            &lt;/li&gt;
+                            &lt;li&gt;&lt;Link to=&quot;/contacts&quot;&gt;contacts&lt;/Link&gt;&lt;/li&gt;
+                          &lt;/ul&gt;
+                        &lt;/div&gt;
+                        &lt;div className=&quot;header-action d-none d-md-block&quot;&gt;
+                          &lt;ul&gt;
+                            &lt;li className=&quot;header-search&quot;&gt;&lt;a href=&quot;/#&quot;&gt;&lt;i className=&quot;flaticon-search&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+                            &lt;li className=&quot;header-shop-cart&quot;&gt;&lt;a href=&quot;/#&quot;&gt;&lt;i className=&quot;flaticon-shopping-bag&quot; /&gt;&lt;span&gt;2&lt;/span&gt;&lt;/a&gt;
+                              &lt;ul className=&quot;minicart&quot;&gt;
+                                &lt;li className=&quot;d-flex align-items-start&quot;&gt;
+                                  &lt;div className=&quot;cart-img&quot;&gt;
+                                    &lt;a href=&quot;/#&quot;&gt;&lt;img src=&quot;img/product/cart_p01.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+                                  &lt;/div&gt;
+                                  &lt;div className=&quot;cart-content&quot;&gt;
+                                    &lt;h4&gt;&lt;a href=&quot;/#&quot;&gt;The King Charles Spaniel&lt;/a&gt;&lt;/h4&gt;
+                                    &lt;div className=&quot;cart-price&quot;&gt;
+                                      &lt;span className=&quot;new&quot;&gt;$229.9&lt;/span&gt;
+                                      &lt;span&gt;&lt;del&gt;$229.9&lt;/del&gt;&lt;/span&gt;
+                                    &lt;/div&gt;
+                                  &lt;/div&gt;
+                                  &lt;div className=&quot;del-icon&quot;&gt;
+                                    &lt;a href=&quot;/#&quot;&gt;&lt;i className=&quot;far fa-trash-alt&quot; /&gt;&lt;/a&gt;
+                                  &lt;/div&gt;
+                                &lt;/li&gt;
+                                &lt;li className=&quot;d-flex align-items-start&quot;&gt;
+                                  &lt;div className=&quot;cart-img&quot;&gt;
+                                    &lt;a href=&quot;/#&quot;&gt;&lt;img src=&quot;img/product/cart_p02.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+                                  &lt;/div&gt;
+                                  &lt;div className=&quot;cart-content&quot;&gt;
+                                    &lt;h4&gt;&lt;a href=&quot;/#&quot;&gt;The Labrador Retriever&lt;/a&gt;&lt;/h4&gt;
+                                    &lt;div className=&quot;cart-price&quot;&gt;
+                                      &lt;span className=&quot;new&quot;&gt;$229.9&lt;/span&gt;
+                                      &lt;span&gt;&lt;del&gt;$229.9&lt;/del&gt;&lt;/span&gt;
+                                    &lt;/div&gt;
+                                  &lt;/div&gt;
+                                  &lt;div className=&quot;del-icon&quot;&gt;
+                                    &lt;a href=&quot;/#&quot;&gt;&lt;i className=&quot;far fa-trash-alt&quot; /&gt;&lt;/a&gt;
+                                  &lt;/div&gt;
+                                &lt;/li&gt;
+                                &lt;li&gt;
+                                  &lt;div className=&quot;total-price&quot;&gt;
+                                    &lt;span className=&quot;f-left&quot;&gt;Total:&lt;/span&gt;
+                                    &lt;span className=&quot;f-right&quot;&gt;$239.9&lt;/span&gt;
+                                  &lt;/div&gt;
+                                &lt;/li&gt;
+                                &lt;li&gt;
+                                  &lt;div className=&quot;checkout-link&quot;&gt;
+                                    &lt;a href=&quot;/#&quot;&gt;Shopping Cart&lt;/a&gt;
+                                    &lt;a className=&quot;black-color&quot; href=&quot;/#&quot;&gt;Checkout&lt;/a&gt;
+                                  &lt;/div&gt;
+                                &lt;/li&gt;
+                              &lt;/ul&gt;
+                            &lt;/li&gt;
+                            &lt;li className=&quot;header-btn&quot;&gt;&lt;Link to=&quot;/adoption&quot; className=&quot;btn&quot;&gt;Adopt Here &lt;img src=&quot;img/icon/w_pawprint.png&quot; alt=&quot;&quot; /&gt;&lt;/Link&gt;&lt;/li&gt;
+                          &lt;/ul&gt;
+                        &lt;/div&gt;
+                      &lt;/nav&gt;
+                    &lt;/div&gt;
+                 
+                    &lt;div className=&quot;mobile-menu&quot;&gt;
+                      &lt;nav className=&quot;menu-box&quot;&gt;
+                        &lt;div className=&quot;close-btn&quot;&gt;&lt;i className=&quot;fas fa-times&quot; /&gt;&lt;/div&gt;
+                        &lt;<strong>div className=&quot;nav-logo&quot;&gt;&lt;Link to=&quot;/&quot;&gt;&lt;img src=&quot;img/logo/logo.png&quot; alt=&quot;&quot; title='true' /&gt;&lt;/Link&gt;
+                        &lt;/div&gt;</strong>
+                        &lt;div className=&quot;menu-outer&quot;&gt;
+                      
+                        &lt;/div&gt;
+                        &lt;div className=&quot;social-links&quot;&gt;
+                          &lt;ul className=&quot;clearfix&quot;&gt;
+                            &lt;li&gt;&lt;a href=&quot;/#&quot;&gt;&lt;span className=&quot;fab fa-twitter&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;/#&quot;&gt;&lt;span className=&quot;fab fa-facebook-square&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;/#&quot;&gt;&lt;span className=&quot;fab fa-pinterest-p&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;/#&quot;&gt;&lt;span className=&quot;fab fa-instagram&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;/#&quot;&gt;&lt;span className=&quot;fab fa-youtube&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+                          &lt;/ul&gt;
+                        &lt;/div&gt;
+                      &lt;/nav&gt;
+                    &lt;/div&gt;
+                    &lt;div className=&quot;menu-backdrop&quot; /&gt;
+             
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div className=&quot;header-shape&quot; style={{backgroundImage:&quot;url('img/bg/header_shape.png')&quot;}}/&gt;
+            &lt;/div&gt;
+           
+            &lt;div className=&quot;search-popup-wrap&quot; tabIndex={-1} role=&quot;dialog&quot; aria-hidden=&quot;true&quot;&gt;
+              &lt;div className=&quot;search-close&quot;&gt;
+                &lt;span&gt;&lt;i className=&quot;fas fa-times&quot; /&gt;&lt;/span&gt;
+              &lt;/div&gt;
+              &lt;div className=&quot;search-wrap text-center&quot;&gt;
+                &lt;div className=&quot;container&quot;&gt;
+                  &lt;div className=&quot;row&quot;&gt;
+                    &lt;div className=&quot;col-12&quot;&gt;
+                      &lt;h2 className=&quot;title&quot;&gt;... Search Here ...&lt;/h2&gt;
+                      &lt;div className=&quot;search-form&quot;&gt;
+                        &lt;form action=&quot;#&quot;&gt;
+                          &lt;input type=&quot;text&quot; name=&quot;search&quot; placeholder=&quot;Type keywords here&quot; /&gt;
+                          &lt;button className=&quot;search-btn&quot;&gt;&lt;i className=&quot;fas fa-search&quot; /&gt;&lt;/button&gt;
+                        &lt;/form&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/header&gt;
+        )
+    }
+    
+    export default Header
+  </pre>
+</div>
+<br>
+<h3>Footer Structure How to change Copyright ?</h3>
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+  <pre style="margin: 0; line-height: 125%"><span style="font-weight: bold">
+    import React from &quot;react&quot;;<br />
+    <br />
+    <br />
+    function Footer() {<br />
+      return (<br />
+        &lt;footer&gt;<br />
+        &lt;div className=&quot;footer-top-area footer-bg&quot;&gt;<br />
+          &lt;div className=&quot;container&quot;&gt;<br />
+            &lt;div className=&quot;row justify-content-between&quot;&gt;<br />
+              &lt;div className=&quot;col-3&quot;&gt;<br />
+                &lt;div className=&quot;footer-widget&quot;&gt;<br />
+                  &lt;div className=&quot;f-logo&quot;&gt;<br />
+                    &lt;Link to=&quot;/&quot;&gt;&lt;img src=&quot;img/logo/logo.png&quot; alt=&quot;&quot; /&gt;&lt;/Link&gt;<br />
+                  &lt;/div&gt;<br />
+                  &lt;div className=&quot;footer-text&quot;&gt;<br />
+                    &lt;p&gt;The best overall dog DNA test Embark Breed &amp;amp; Health Kit (view at Chewy) which provides overall dog you.&lt;/p&gt;<br />
+                  &lt;/div&gt;<br />
+                  &lt;div className=&quot;footer-contact&quot;&gt;<br />
+                    &lt;div className=&quot;icon&quot;&gt;&lt;i className=&quot;fas fa-headphones&quot; /&gt;&lt;/div&gt;<br />
+                    &lt;div className=&quot;content&quot;&gt;<br />
+                      &lt;h4 className=&quot;title&quot;&gt;&lt;a href=&quot;tel:0987654321&quot;&gt;747-800-9880&lt;/a&gt;&lt;/h4&gt;<br />
+                      &lt;span&gt;Call Now&lt;/span&gt;<br />
+                    &lt;/div&gt;<br />
+                  &lt;/div&gt;<br />
+                  &lt;div className=&quot;footer-social&quot;&gt;<br />
+                    &lt;ul&gt;<br />
+                      &lt;li&gt;&lt;a href=&quot;/#&quot;&gt;&lt;i className=&quot;fab fa-facebook-f&quot; /&gt;&lt;/a&gt;&lt;/li&gt;<br />
+                      &lt;li&gt;&lt;a href=&quot;/#&quot;&gt;&lt;i className=&quot;fab fa-twitter&quot; /&gt;&lt;/a&gt;&lt;/li&gt;<br />
+                      &lt;li&gt;&lt;a href=&quot;/#&quot;&gt;&lt;i className=&quot;fab fa-youtube&quot; /&gt;&lt;/a&gt;&lt;/li&gt;<br />
+                      &lt;li&gt;&lt;a href=&quot;/#&quot;&gt;&lt;i className=&quot;fab fa-linkedin-in&quot; /&gt;&lt;/a&gt;&lt;/li&gt;<br />
+                    &lt;/ul&gt;<br />
+                  &lt;/div&gt;<br />
+                &lt;/div&gt;<br />
+              &lt;/div&gt;<br />
+              &lt;div className=&quot;col-2&quot;&gt;<br />
+                &lt;div className=&quot;footer-widget&quot;&gt;<br />
+                  &lt;h4 className=&quot;fw-title&quot;&gt;Our Policies&lt;/h4&gt;<br />
+                  &lt;div className=&quot;fw-link&quot;&gt;<br />
+                    &lt;ul&gt;<br />
+                      &lt;li&gt;&lt;Link to=&quot;/contact&quot;&gt;Privacy Policy&lt;/Link&gt;&lt;/li&gt;<br />
+                      &lt;li&gt;&lt;Link to=&quot;/contact&quot;&gt;Terms and Conditions&lt;/Link&gt;&lt;/li&gt;<br />
+                      &lt;li&gt;&lt;Link to=&quot;/contact&quot;&gt;Editorial Policy&lt;/Link&gt;&lt;/li&gt;<br />
+                      &lt;li&gt;&lt;Link to=&quot;/contact&quot;&gt;Return Policy&lt;/Link&gt;&lt;/li&gt;<br />
+                      &lt;li&gt;&lt;Link to=&quot;/contact&quot;&gt;IP Policy&lt;/Link&gt;&lt;/li&gt;<br />
+                      &lt;li&gt;&lt;Link to=&quot;/contact&quot;&gt;Grievance Redressal Policy&lt;/Link&gt;&lt;/li&gt;<br />
+                      &lt;li&gt;&lt;Link to=&quot;/contact&quot;&gt;Our Conditions&lt;/Link&gt;&lt;/li&gt;<br />
+                    &lt;/ul&gt;<br />
+                  &lt;/div&gt;<br />
+                &lt;/div&gt;<br />
+              &lt;/div&gt;<br />
+              &lt;div className=&quot;col-2&quot;&gt;<br />
+                &lt;div className=&quot;footer-widget&quot;&gt;<br />
+                  &lt;h4 className=&quot;fw-title&quot;&gt;Our Services&lt;/h4&gt;<br />
+                  &lt;div className=&quot;fw-link&quot;&gt;<br />
+                    &lt;ul&gt;<br />
+                      &lt;li&gt;&lt;Link to=&quot;/breeder&quot;&gt;Our Breeder&lt;/Link&gt;&lt;/li&gt;<br />
+                      &lt;li&gt;&lt;Link to=&quot;/adoption&quot;&gt;Our Adoption&lt;/Link&gt;&lt;/li&gt;<br />
+                      &lt;li&gt;&lt;Link to=&quot;/contact&quot;&gt;Editorial Policy&lt;/Link&gt;&lt;/li&gt;<br />
+                      &lt;li&gt;&lt;Link to=&quot;/contact&quot;&gt;Return Policy&lt;/Link&gt;&lt;/li&gt;<br />
+                      &lt;li&gt;&lt;Link to=&quot;/contact&quot;&gt;Grievance Policy&lt;/Link&gt;&lt;/li&gt;<br />
+                      &lt;li&gt;&lt;Link to=&quot;/contact&quot;&gt;Redressal Policy&lt;/Link&gt;&lt;/li&gt;<br />
+                      &lt;li&gt;&lt;Link to=&quot;/contact&quot;&gt;Contact Us&lt;/Link&gt;&lt;/li&gt;<br />
+                    &lt;/ul&gt;<br />
+                  &lt;/div&gt;<br />
+                &lt;/div&gt;<br />
+              &lt;/div&gt;<br />
+              &lt;div className=&quot;col-3&quot;&gt;<br />
+                &lt;div className=&quot;footer-widget&quot;&gt;<br />
+                  &lt;h4 className=&quot;fw-title&quot;&gt;Instagram&lt;/h4&gt;<br />
+                  &lt;div className=&quot;fw-insta&quot;&gt;<br />
+                    &lt;ul&gt;<br />
+                      &lt;li&gt;&lt;a href=&quot;/#&quot;&gt;&lt;img src=&quot;img/images/insta_img01.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/li&gt;<br />
+                      &lt;li&gt;&lt;a href=&quot;/#&quot;&gt;&lt;img src=&quot;img/images/insta_img02.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/li&gt;<br />
+                      &lt;li&gt;&lt;a href=&quot;/#&quot;&gt;&lt;img src=&quot;img/images/insta_img03.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/li&gt;<br />
+                      &lt;li&gt;&lt;a href=&quot;/#&quot;&gt;&lt;img src=&quot;img/images/insta_img04.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/li&gt;<br />
+                      &lt;li&gt;&lt;a href=&quot;/#&quot;&gt;&lt;img src=&quot;img/images/insta_img05.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/li&gt;<br />
+                      &lt;li&gt;&lt;a href=&quot;/#&quot;&gt;&lt;img src=&quot;img/images/insta_img06.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/li&gt;<br />
+                    &lt;/ul&gt;<br />
+                  &lt;/div&gt;<br />
+                &lt;/div&gt;<br />
+              &lt;/div&gt;<br />
+            &lt;/div&gt;<br />
+          &lt;/div&gt;<br />
+          &lt;div className=&quot;footer-shape&quot;&gt;&lt;img src=&quot;img/images/footer_shape01.png&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;<br />
+          &lt;div className=&quot;footer-shape shape-two&quot;&gt;&lt;img src=&quot;img/images/footer_shape02.png&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;<br />
+        &lt;/div&gt;<br />
+        &lt;div className=&quot;copyright-area&quot;&gt;<br />
+          &lt;div className=&quot;container&quot;&gt;<br />
+            &lt;div className=&quot;row&quot;&gt;<br />
+              &lt;div className=&quot;col-md-8&quot;&gt;<br />
+                &lt;div className=&quot;copyright-text&quot;&gt;<br /><strong>
+                  &lt;p&gt;Copyright &copy; 2022 kutto. All Rights Reserved.&lt;/p&gt;<br />
+                &lt;/div&gt;<br /> </strong>
+              &lt;/div&gt;<br />
+              &lt;div className=&quot;col-md-4 d-none d-md-block&quot;&gt;<br />
+                &lt;div className=&quot;footer-lang&quot;&gt;<br />
+                  &lt;div className=&quot;dropdown&quot;&gt;<br />
+                    &lt;button className=&quot;dropdown-toggle&quot; type=&quot;button&quot; id=&quot;dropdownMenuButton2&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;<br />
+                      &lt;img src=&quot;img/icon/united-states.png&quot; alt=&quot;&quot; /&gt; English<br />
+                    &lt;/button&gt;<br />
+                    &lt;div className=&quot;dropdown-menu&quot; aria-labelledby=&quot;dropdownMenuButton2&quot;&gt;<br />
+                      &lt;Link className=&quot;dropdown-item&quot; to=&quot;/&quot;&gt;&lt;img src=&quot;img/icon/russia.png&quot; alt=&quot;&quot; /&gt;Russia&lt;/Link&gt;<br />
+                      &lt;Link className=&quot;dropdown-item&quot; to=&quot;/&quot;&gt;&lt;img src=&quot;img/icon//thailand.png&quot; alt=&quot;&quot; /&gt;Thailand&lt;/Link&gt;<br />
+                      &lt;Link className=&quot;dropdown-item&quot; to=&quot;/&quot;&gt;&lt;img src=&quot;img/icon/india.png&quot; alt=&quot;&quot; /&gt;India&lt;/Link&gt;<br />
+                    &lt;/div&gt;<br />
+                  &lt;/div&gt;<br />
+                &lt;/div&gt;<br />
+              &lt;/div&gt;<br />
+            &lt;/div&gt;<br />
+          &lt;/div&gt;<br />
+        &lt;/div&gt;<br />
+      &lt;/footer&gt;<br />
+    <br />
+      )<br />
+    }<br />
+    <br />
+    export default Footer;<br />
+    
+</pre></div>
+<hr/>
+<h3 id="C">B) CSS Files - <a href="#toc">top</a></h3>
+
+		<span id="result_box" lang="en">These are css files used in this template:</span>
+  <ol>
+		  <li><strong>style.css</strong> -  main css files (<span id="result_box2" lang="en">You can change  all styles from <strong>main.scss </strong>file. </span>)</li>
+		</ol>
+  <pre>
+    /*
+    Theme Name: kutto - Pet Breeder & Adoption React js Template
+    Support: themebeyond.com
+    Description: kutto - Pet Breeder & Adoption React js Template
+    Version: 1.0
+  */
+  
+  /* CSS Index
+  -----------------------------------
+  1. Theme default css
+  2. Header
+  3. Mobile-menu
+  4. Search
+  5. Breadcrumb
+  6. Slider
+  7. Find
+  8. Counter
+  9. Adoption
+  10. Breeder
+  11. Breed services
+  12. FAQ
+  13. Breeder Gallery
+  14. Brand-area
+  15. Adoption Shop
+  16. Testimonial
+  17. Shop
+  18. Blog
+  19. Contact
+  20. Newsletter
+  21. Footer
+  22. Copyright
+  23. Preloader
+  
+  */
+</pre>
+<hr>
+		
+<h3 id="D">C) Dependencies - <a href="#toc">top</a></h3>
+<pre>   {
+  "name": "kutto",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "jquery": "^3.6.0",
+    "magnific-popup": "^1.1.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^5.3.0",
+    "react-scripts": "5.0.0",
+    "react-slick": "^0.28.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
+
+</pre>
+
+<hr>
+<hr>
+<div id="G">&nbsp;</div>
+<p>Once again, thank you so much for purchasing this template. As I said at the beginning, I'd be glad to help you if you have any questions relating to this template. No guarantees, but I'll do my best to assist. If you have a more general question relating to the template you might consider visiting the forums and asking your question in the "Item Discussion" section.</p> 
+		
+		<p class="append-bottom alt large"><strong>ThemeBeyond</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+</div><!-- end div .container -->
+</body>
+</html>
